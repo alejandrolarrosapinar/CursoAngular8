@@ -20,7 +20,7 @@ export class ComponenteClienteHttpComponent implements OnInit {
     //alert(servicioClienteHttp);
     this.usuario = new User();
     this.variable = false;
-    this.textoBoton='Mostrar';
+    this.textoBoton='Mostrar:';
     this.urlGato ='https://s4.eestatic.com/2018/11/28/social/Gatos-Instagram-Redes_sociales-La_Jungla_356726591_107647814_1706x960.jpg';
    }
 

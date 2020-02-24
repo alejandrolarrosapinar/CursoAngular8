@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CategoriasComponent } from './pages/categorias/categorias.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ComponenteClienteHttpComponent } from './pages/componente-cliente-http/componente-cliente-http.component';
+import { PageNotFoundComponentComponent } from './pages/page-not-found-component/page-not-found-component.component';
 
 @NgModule({
   declarations: [
     // Aquí se definen todos los componentes que vamos a utilizar en el módulo.
     AppComponent,
     CategoriasComponent,
-    ComponenteClienteHttpComponent
+    ComponenteClienteHttpComponent,
+    PageNotFoundComponentComponent
   ],
   imports: [
     BrowserModule,
