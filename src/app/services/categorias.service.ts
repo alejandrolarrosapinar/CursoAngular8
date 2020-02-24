@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CategoriasService {
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
     
   }
 
@@ -16,8 +16,12 @@ export class CategoriasService {
     return numero1 + numero2;
   }
 
+  getConfig(){
+   
+    return this.httpClient.get('assets/json/data.json');
+  }
+
   obtenerDatos(){
-    
   }
 
 

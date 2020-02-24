@@ -4,6 +4,8 @@ import { ComponenteClienteHttpComponent } from './pages/componente-cliente-http/
 import { CategoriasComponent } from './pages/categorias/categorias.component';
 import { PageNotFoundComponentComponent } from './pages/page-not-found-component/page-not-found-component.component';
 import { PadreHijoComponent } from './pages/padre-hijo/padre-hijo.component';
+import { HijoPadreComponent } from './pages/hijo-padre/hijo-padre.component';
+
 
 
 const routes: Routes = [
@@ -14,6 +16,9 @@ const routes: Routes = [
   },
   {
     path: 'padreHijo', component: PadreHijoComponent
+  },
+  {
+    path: 'hijoPadre', component: HijoPadreComponent
   },
   {
     path: '', redirectTo: '/categorias' , pathMatch: 'full'

@@ -10,6 +10,8 @@ import { PageNotFoundComponentComponent } from './pages/page-not-found-component
 import { PadreHijoComponent } from './pages/padre-hijo/padre-hijo.component';
 import { PadreComponent } from './pages/padre/padre.component';
 import { HijoComponent } from './pages/hijo/hijo.component';
+import { HijoPadreComponent } from './pages/hijo-padre/hijo-padre.component';
+import { PalabrasComponent } from './pages/palabras/palabras.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HijoComponent } from './pages/hijo/hijo.component';
     PageNotFoundComponentComponent,
     PadreHijoComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    HijoPadreComponent,
+    PalabrasComponent
   ],
   imports: [
     BrowserModule,

@@ -7,13 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HijoComponent implements OnInit {
 
-  @Input() entrada: string;
+  @Input() variableHijo: string;
 
   constructor() { }
 
-  pulsar(){
-    
-  }
+
 
   ngOnInit() {
   }

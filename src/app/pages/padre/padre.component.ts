@@ -10,7 +10,7 @@ export class PadreComponent implements OnInit {
   variablePadre: string;
 
   constructor() { 
-    this.variablePadre = "ahora sí";
+    this.variablePadre = "VARIABLE PADRE";
   }
 
   ngOnInit() {

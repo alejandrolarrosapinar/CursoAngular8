@@ -1,0 +1,22 @@
+{
+    "data":[
+    {
+        "name" : "historia",
+        "palabras":[
+            {"name": "neloticio"},
+            {"name": "edad antigua"}]
+    },{
+        "name" : "comidas",
+        "palabras":[
+            {"name": "manzana"},
+            {"name": "pera"}
+        ]
+    },{
+        "name": "ciudades",
+        "palabras":[
+            {"name": "murcia"},
+            {"name": "barcelona"}
+        ]
+    }
+    ]
+}
