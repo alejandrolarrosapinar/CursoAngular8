@@ -1,0 +1,24 @@
+<!--
+<img [src]="usuario.avatar_url"/>
+<p>{{usuario.login}}</p>
+
+
+</ul>-->
+<button (click)="onClickMe()" style="margin-bottom: 20px;">{{textoBoton}}</button>
+<table *ngIf="variable" border="1">
+    <th>Clave</th>
+    <th>Valor</th>
+    <tr *ngFor="let e of usuario | keyvalue">
+        <td>{{e.key}}</td>
+        <td>
+            <a *ngIf="empiezaPor(e.value)" [href]="e.value">{{e.value}}</a>
+            
+            <a *ngIf="!empiezaPor(e.value)">{{e.value}}</a>
+        </td>
+        
+        
+        
+    </tr>
+</table>
+
+
