@@ -7,6 +7,9 @@ import { CategoriasComponent } from './pages/categorias/categorias.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ComponenteClienteHttpComponent } from './pages/componente-cliente-http/componente-cliente-http.component';
 import { PageNotFoundComponentComponent } from './pages/page-not-found-component/page-not-found-component.component';
+import { PadreHijoComponent } from './pages/padre-hijo/padre-hijo.component';
+import { PadreComponent } from './pages/padre/padre.component';
+import { HijoComponent } from './pages/hijo/hijo.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { PageNotFoundComponentComponent } from './pages/page-not-found-component
     AppComponent,
     CategoriasComponent,
     ComponenteClienteHttpComponent,
-    PageNotFoundComponentComponent
+    PageNotFoundComponentComponent,
+    PadreHijoComponent,
+    PadreComponent,
+    HijoComponent
   ],
   imports: [
     BrowserModule,
