@@ -9,7 +9,8 @@
         "name" : "comidas",
         "palabras":[
             {"name": "manzana"},
-            {"name": "pera"}
+            {"name": "pera"},
+            {"name": "plátano"}
         ]
     },{
         "name": "ciudades",

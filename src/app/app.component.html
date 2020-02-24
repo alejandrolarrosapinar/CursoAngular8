@@ -1,7 +1,17 @@
 <p>Componente principal este componente siempre se va a mostrar</p>
 
+<div id="menuItems">
+    <button routerLink="info">Info</button> 
+    <button routerLink="categorias">Categorías</button> 
+    <button routerLink="padreHijo">Padre hijo</button> <br/>
+</div>
+ 
 <!-- A través de router-outlet se hace la redirección de componentes a partir de rutas-->
-<router-outlet></router-outlet>
+<div id="contenidoPrincipal">
+    <router-outlet></router-outlet>
+
+</div>
+
 
 
 
