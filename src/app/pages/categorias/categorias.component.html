@@ -4,8 +4,10 @@
 <p>La variable cadena2 vale '{{cadena2}}'</p> -->
 <div *ngFor="let categoria of categorias">
     <p>{{categoria.name}} :</p>
+    <button (click)="changeName(categoria.name)">Modificar nombre</button>
+
     <ul>
-        <app-palabras *ngFor="let palabra of categoria.palabras" [name]="palabra.name">
+        <app-palabras *ngFor="let palabra of categoria.palabras" [name]="palabra.name" [categoriaName]="categoria.name">
         </app-palabras>
     </ul>
 </div>

@@ -12,6 +12,8 @@ import { PadreComponent } from './pages/padre/padre.component';
 import { HijoComponent } from './pages/hijo/hijo.component';
 import { HijoPadreComponent } from './pages/hijo-padre/hijo-padre.component';
 import { PalabrasComponent } from './pages/palabras/palabras.component';
+import { MarcadorComponent } from './pages/marcador/marcador.component';
+import { ModificarMarcadorComponent } from './pages/modificar-marcador/modificar-marcador.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PalabrasComponent } from './pages/palabras/palabras.component';
     PadreComponent,
     HijoComponent,
     HijoPadreComponent,
-    PalabrasComponent
+    PalabrasComponent,
+    MarcadorComponent,
+    ModificarMarcadorComponent
   ],
   imports: [
     BrowserModule,

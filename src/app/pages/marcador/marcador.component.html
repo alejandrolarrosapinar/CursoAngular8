@@ -1,0 +1,10 @@
+<p>marcador works!</p>
+{{marcador}}
+<!-- con #marcador estamos creando la variable marcador, cogera todos los valores
+     de la etiqueta app-modificar-marcador.
+-->
+<!-- <button (click)="marcador.sumar()">sumar hijo</button> -->
+<!-- <button (click)="marcador.restar()">restar hijo</button>-->
+<app-modificar-marcador  (actualizar)="actualizacion($event)" [marcadorHijo]="marcador">
+</app-modificar-marcador>
+

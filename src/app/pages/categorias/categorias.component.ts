@@ -19,15 +19,16 @@ export class CategoriasComponent implements OnInit {
   cadena: string;
   cadena2: string;
 
-  categorias:any;
+  categorias: any;
 
+
+  
   constructor(private service: CategoriasService) {
     // aquí se establecen el valor de las variables.
-    //this.numero = 345;
-    //this.cadena = 'Cadena';
-    //this.cadena2 = `${this.numero + 34}`;
-    //alert(service.obtenerDatos());
-    
+    // this.numero = 345;
+    // this.cadena = 'Cadena';
+    // this.cadena2 = `${this.numero + 34}`;
+    // alert(service.obtenerDatos());
   }
 
   ngOnInit() {
@@ -37,19 +38,24 @@ export class CategoriasComponent implements OnInit {
     // lo mas normal es cualquier llamada a un servidor aquí
     // también existe el afterviewinit para cuando la vista se ha cargado
     // en el navegador.
-    //alert('leyendo datos del fichero json');
+    // alert('leyendo datos del fichero json');
     this.service.getConfig().subscribe(
-      (response)=>{
+      (response) => {
           console.log(response);
-          var jsonParseado =JSON.stringify(response);
+          const jsonParseado = JSON.stringify(response);
           this.categorias = JSON.parse(jsonParseado).data;
-          //console.log(this.categorias[0].palabras[0]["name"]);
-      },(error)=>{
+          // console.log(this.categorias[0].palabras[0]["name"]);
+      } , (error) => {
         console.log(error);
       }
-          );
+    );
   }
 
- 
-
+  changeName(categoriasName: string){
+    console.log(categoriasName);
+      categoriasName="categoriasnamee";
+      console.log("modificamos");
+      console.log(categoriasName);
+      //no pasa el valor del padre al hijo
+  }
 }
