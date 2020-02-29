@@ -4,7 +4,7 @@ Curso realizado en OESIA.
 
 # Instrucciones
 
-Hacer git clone ruta_repositorio
+Hacer git clone https://github.com/alejandrolarrosapinar/CursoAngular8
 
 Nos situamos dentro del proyecto y ejecutamos npm install 
 
