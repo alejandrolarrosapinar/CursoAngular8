@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComunicaNuevoMarcadorService } from 'src/app/services/comunica-nuevo-marcador.service';
 
 @Component({
   selector: 'app-marcador',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class MarcadorComponent implements OnInit {
 
   marcador: number;
-  constructor() { 
+  constructor(private servicio: ComunicaNuevoMarcadorService) { 
     this.marcador = 0;
+    servicio.marcador$.subscribe(correct=>{
+        alert('eee'+ correct);
+    });
   }
 
   ngOnInit() {

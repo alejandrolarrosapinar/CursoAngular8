@@ -14,6 +14,8 @@ import { HijoPadreComponent } from './pages/hijo-padre/hijo-padre.component';
 import { PalabrasComponent } from './pages/palabras/palabras.component';
 import { MarcadorComponent } from './pages/marcador/marcador.component';
 import { ModificarMarcadorComponent } from './pages/modificar-marcador/modificar-marcador.component';
+import { NuevoMarcadorComponent } from './pages/nuevo-marcador/nuevo-marcador.component';
+import { EditarNuevoMarcadorComponent } from './pages/editar-nuevo-marcador/editar-nuevo-marcador.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ModificarMarcadorComponent } from './pages/modificar-marcador/modificar
     HijoPadreComponent,
     PalabrasComponent,
     MarcadorComponent,
-    ModificarMarcadorComponent
+    ModificarMarcadorComponent,
+    NuevoMarcadorComponent,
+    EditarNuevoMarcadorComponent
   ],
   imports: [
     BrowserModule,

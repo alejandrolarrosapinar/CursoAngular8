@@ -6,6 +6,7 @@ import { PageNotFoundComponentComponent } from './pages/page-not-found-component
 import { PadreHijoComponent } from './pages/padre-hijo/padre-hijo.component';
 import { HijoPadreComponent } from './pages/hijo-padre/hijo-padre.component';
 import { MarcadorComponent } from './pages/marcador/marcador.component';
+import { NuevoMarcadorComponent } from './pages/nuevo-marcador/nuevo-marcador.component';
 
 
 
@@ -23,6 +24,9 @@ const routes: Routes = [
   },
   {
     path: 'marcador', component: MarcadorComponent
+  },
+  {
+    path: 'nuevoMarcador', component: NuevoMarcadorComponent
   },
   {
     path: '', redirectTo: '/categorias' , pathMatch: 'full'
