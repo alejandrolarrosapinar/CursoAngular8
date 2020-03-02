@@ -8,7 +8,7 @@
 <table *ngIf="variable" border="1">
     <th>Clave</th>
     <th>Valor</th>
-    <tr *ngFor="let e of usuario | keyvalue">
+    <tr *ngFor="let e of info | keyvalue">
         <td>{{e.key}}</td>
         <td>
             <a *ngIf="empiezaPor(e.value)" [href]="e.value">{{e.value}}</a>

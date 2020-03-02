@@ -2,17 +2,16 @@ h1{
     text-align: center;
     background-color: blueviolet;
 }
- 
-#contenidoPrincipal{
-    margin-top: 100px;
-    background-color: red;
-}
 
 button{
-    margin-right: 20px;
-    border-radius: 90%;
+    margin:10px;
+    width: 100px;
 }
 
-#menuItems{
-    background-color: blue;
+#contenidoPrincipal{
+    border: black 1px;
 }
+ 
+
+
+

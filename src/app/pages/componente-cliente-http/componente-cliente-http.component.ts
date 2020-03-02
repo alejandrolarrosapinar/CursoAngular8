@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicioClienteHttpService } from 'src/app/services/servicio-cliente-http.service';
-import { User } from 'src/app/model/User';
+import { Info } from 'src/app/interfaces/info';
 
 @Component({
   selector: 'app-componente-cliente-http',
@@ -11,14 +11,14 @@ import { User } from 'src/app/model/User';
 })
 export class ComponenteClienteHttpComponent implements OnInit {
 
-  usuario: User;
+  info: Info;
   variable: boolean;
   urlGato: string;
   textoBoton: string;
   
   constructor(private servicioClienteHttp: ServicioClienteHttpService) {
     //alert(servicioClienteHttp);
-    this.usuario = new User();
+    
     this.variable = false;
     this.textoBoton='Mostrar:';
     this.urlGato ='https://s4.eestatic.com/2018/11/28/social/Gatos-Instagram-Redes_sociales-La_Jungla_356726591_107647814_1706x960.jpg';
@@ -36,8 +36,10 @@ export class ComponenteClienteHttpComponent implements OnInit {
 
   ngOnInit() {
     this.servicioClienteHttp.loadInfo().subscribe(
-      (response)=>{
-        this.usuario = response;
+      (response:Info)=>{
+        this.info = response;
+        console.log(this.info.login);
+        console.log(this.info.followers_url);
         //alert(response['login']);
         //alert(this.usuario.login);
         

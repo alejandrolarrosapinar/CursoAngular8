@@ -3,23 +3,25 @@
 <div id="menuItems">
     <button routerLink="info">Info</button> 
     <button routerLink="categorias">Categorías</button> 
-    <button routerLink="padreHijo">Padre hijo</button> <br/>
-    <button routerLink="marcador">Marcadores (hijo envia a padre)</button> <br/>
-    <button routerLink="nuevoMarcador">Nuevo marcador</button> <br/>
+    <button routerLink="padreHijo">Padre hijo</button> 
+    <button routerLink="marcador">Marcadores (hijo envia a padre)</button> 
+    <button routerLink="nuevoMarcador">Nuevo marcador</button> 
     <button routerLink="modulo1">Modulo 1 defecto</button>
     <button routerLink="modulo1/uno">Componente 1 modulo 1</button>
     <button routerLink="modulo1/dos">Componente 2 modulo 1</button>
-
     <button routerLink="padre-router">Padre router</button>
 
 </div>
 
  
 <!-- A través de router-outlet se hace la redirección de componentes a partir de rutas-->
-<div id="contenidoPrincipal">
-    <router-outlet></router-outlet>
+<table id="contenidoPrincipal" border="1">
+    <tr>
+        <td><router-outlet></router-outlet></td>
+    </tr>
+    
 
-</div>
+</table>
 
 
 
