@@ -11,8 +11,8 @@ export class MarcadorComponent implements OnInit {
   marcador: number;
   constructor(private servicio: ComunicaNuevoMarcadorService) { 
     this.marcador = 0;
-    servicio.marcador$.subscribe(correct=>{
-        alert('eee'+ correct);
+    servicio.marcador2$.subscribe(correct=>{
+        this.marcador = correct;
     });
   }
 
