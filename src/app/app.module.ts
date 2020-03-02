@@ -16,6 +16,9 @@ import { MarcadorComponent } from './pages/marcador/marcador.component';
 import { ModificarMarcadorComponent } from './pages/modificar-marcador/modificar-marcador.component';
 import { NuevoMarcadorComponent } from './pages/nuevo-marcador/nuevo-marcador.component';
 import { EditarNuevoMarcadorComponent } from './pages/editar-nuevo-marcador/editar-nuevo-marcador.component';
+import { PadreRouterOutletComponent } from './pages/padre-router-outlet/padre-router-outlet.component';
+import { Hijo1RouterOutletComponent } from './pages/hijo1-router-outlet/hijo1-router-outlet.component';
+import { Hijo2RouterOutletComponent } from './pages/hijo2-router-outlet/hijo2-router-outlet.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { EditarNuevoMarcadorComponent } from './pages/editar-nuevo-marcador/edit
     MarcadorComponent,
     ModificarMarcadorComponent,
     NuevoMarcadorComponent,
-    EditarNuevoMarcadorComponent
+    EditarNuevoMarcadorComponent,
+    PadreRouterOutletComponent,
+    Hijo1RouterOutletComponent,
+    Hijo2RouterOutletComponent
   ],
   imports: [
     BrowserModule,

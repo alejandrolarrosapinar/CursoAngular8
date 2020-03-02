@@ -9,9 +9,9 @@ import { ComunicaNuevoMarcadorService } from 'src/app/services/comunica-nuevo-ma
 export class MarcadorComponent implements OnInit {
 
   marcador: number;
-  constructor(private servicio: ComunicaNuevoMarcadorService) { 
+  constructor(private servicio: ComunicaNuevoMarcadorService) {
     this.marcador = 0;
-    servicio.marcador2$.subscribe(correct=>{
+    servicio.marcador2$.subscribe(correct => {
         this.marcador = correct;
     });
   }
@@ -19,9 +19,9 @@ export class MarcadorComponent implements OnInit {
   ngOnInit() {
   }
 
-  //este metodo esta esperando a que el hijo lo llame con el emitter -> destino
-  actualizacion(event){
-    this.marcador=event;
+  // este metodo esta esperando a que el hijo lo llame con el emitter -> destino
+  actualizacion(event) {
+    this.marcador = event;
   }
 
 }
