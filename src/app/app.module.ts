@@ -19,6 +19,9 @@ import { EditarNuevoMarcadorComponent } from './pages/editar-nuevo-marcador/edit
 import { PadreRouterOutletComponent } from './pages/padre-router-outlet/padre-router-outlet.component';
 import { Hijo1RouterOutletComponent } from './pages/hijo1-router-outlet/hijo1-router-outlet.component';
 import { Hijo2RouterOutletComponent } from './pages/hijo2-router-outlet/hijo2-router-outlet.component';
+import { FormulariosReactivosComponent } from './pages/formularios-reactivos/formularios-reactivos.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FormularioTemplateDrivenComponent } from './pages/formulario-template-driven/formulario-template-driven.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +41,18 @@ import { Hijo2RouterOutletComponent } from './pages/hijo2-router-outlet/hijo2-ro
     EditarNuevoMarcadorComponent,
     PadreRouterOutletComponent,
     Hijo1RouterOutletComponent,
-    Hijo2RouterOutletComponent
+    Hijo2RouterOutletComponent,
+    FormulariosReactivosComponent,
+    FormularioTemplateDrivenComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   providers: [],
   // Componente principal de la aplicación

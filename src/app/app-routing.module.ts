@@ -12,6 +12,8 @@ import { PadreRouterOutletComponent } from './pages/padre-router-outlet/padre-ro
 import { Hijo2RouterOutletComponent } from './pages/hijo2-router-outlet/hijo2-router-outlet.component';
 import { Hijo1RouterOutletComponent } from './pages/hijo1-router-outlet/hijo1-router-outlet.component';
 import { AuthGuardService } from './services/auth-guard.service';
+import { FormulariosReactivosComponent } from './pages/formularios-reactivos/formularios-reactivos.component';
+import { FormularioTemplateDrivenComponent } from './pages/formulario-template-driven/formulario-template-driven.component';
 
 
 
@@ -27,6 +29,8 @@ const routes: Routes = [
     children: [{path: 'hijo1-router', component: Hijo1RouterOutletComponent},
                {path: 'hijo2-router', component: Hijo2RouterOutletComponent}
               ]},
+  {path: 'formularioReactivo', component: FormulariosReactivosComponent},
+  {path: 'formularioTemplateDriven', component: FormularioTemplateDrivenComponent},
   {path: '', redirectTo: '/categorias' , pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponentComponent}
 
